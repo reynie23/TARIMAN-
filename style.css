@@ -8,20 +8,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Myfont';
-    src: url('beachday.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Myfont1';
-    src: url('Naluka.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -354,8 +340,15 @@ body {
     z-index: 1;
     max-width: 800px;
     padding: 0 2rem;
+  animation: fadeOut 1s ease 5s forwards;
 }
 
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .hero h1 {
     font-size: 7rem;
     margin-bottom: 1rem;
